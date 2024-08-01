@@ -66,11 +66,17 @@ const Quiz = ({ onComplete }) => {
   };
 
   const handleInputSubmit = () => {
-    if (parseInt(userInput, 10) > 1000000) {
-      setCurrentQuestion(currentQuestion + 1);
-      setInputSubmitted(true);
+    const inputValue = parseInt(userInput, 10);
+
+    if (inputValue > 1000) {
+        setCurrentQuestion(currentQuestion + 1);
+        setInputSubmitted(true);
+    } else {
+        // Display a pop-up message if the value is not greater than 1000
+        alert('Please enter a value greater than 1000.');
     }
-  };
+};
+
 
   if (currentQuestion >= questions.length) {
     onComplete(score);
