@@ -1,4 +1,4 @@
-.result-container {
+/* .result-container {
     width: 100%;
     height: 100vh;
     background: rgb(0,105,130);
@@ -40,5 +40,434 @@
   .restart-button:hover {
     background-color: #21a1f1;
     transform: scale(1.05);
+  }
+   */
+
+
+
+
+
+
+
+   /* .result-page {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #61dafb;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.7);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    color: #fff;
+  }
+  
+  .result-score {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  
+  .result-details {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .retry-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #61dafb;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .retry-button:hover {
+    background-color: #21a1f1;
+    transform: translateY(-2px);
+  }
+  
+  .retry-button:focus {
+    outline: none;
+  }
+  
+  .retry-button:active {
+    transform: translateY(1px);
+  }
+   */
+
+
+
+
+   /* .result-page {
+    text-align: center;
+    padding: 40px;
+    border: 2px solid #61dafb;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .result-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .result-score {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  
+  .result-details {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .result-details a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .result-details a:hover {
+    text-decoration: underline;
+  }
+  
+  .retry-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #61dafb;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .retry-button:hover {
+    background-color: #21a1f1;
+    transform: translateY(-2px);
+  }
+  
+  .retry-button:focus {
+    outline: none;
+  }
+  
+  .retry-button:active {
+    transform: translateY(1px);
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  } */
+  
+
+
+
+
+
+
+
+
+  /* .result-page {
+    text-align: center;
+    padding: 40px;
+    border: 2px solid #61dafb;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .result-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .result-score {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  
+  .result-details {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .result-details a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .result-details a:hover {
+    text-decoration: underline;
+  }
+  
+  .retry-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #61dafb;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .retry-button:hover {
+    background-color: #21a1f1;
+    transform: translateY(-2px);
+  }
+  
+  .retry-button:focus {
+    outline: none;
+  }
+  
+  .retry-button:active {
+    transform: translateY(1px);
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+   */
+
+
+   /* .result-page {
+    text-align: center;
+    padding: 40px;
+    border: 2px solid #61dafb;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .result-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .result-score {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  
+  .result-details {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .result-details a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .result-details a:hover {
+    text-decoration: underline;
+  }
+  
+  .retry-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #61dafb;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .retry-button:hover {
+    background-color: #21a1f1;
+    transform: translateY(-2px);
+  }
+  
+  .retry-button:focus {
+    outline: none;
+  }
+  
+  .retry-button:active {
+    transform: translateY(1px);
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .result-page h1 {
+      font-size: 2rem;
+    }
+  
+    .result-page {
+      padding: 20px;
+    }
+  
+    .retry-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+   */
+
+
+
+
+
+   .result-page {
+    text-align: center;
+    padding: 40px;
+    border: 2px solid #61dafb;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .result-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .result-score {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  
+  .result-details {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .result-details a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .result-details a:hover {
+    text-decoration: underline;
+  }
+  
+  .retry-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #61dafb;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .retry-button i {
+    margin-right: 10px;
+  }
+  
+  .retry-button:hover {
+    background-color: #21a1f1;
+    transform: translateY(-2px);
+  }
+  
+  .retry-button:focus {
+    outline: none;
+  }
+  
+  .retry-button:active {
+    transform: translateY(1px);
+  }
+  
+  /* From Uiverse.io by vinodjangid07 */ 
+.button-explore {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: rgb(161, 255, 20);
+  border-radius: 30px;
+  color: rgb(19, 19, 19);
+  font-weight: 600;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: .2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 8px;
+  transition-duration: .5s;
+}
+
+.svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
+}
+
+.bell path {
+  fill: rgb(19, 19, 19);
+}
+
+.button-explore:hover {
+  background-color: rgb(192, 255, 20);
+  transition-duration: .5s;
+}
+
+.button-explore:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
+}
+
+.button-explore:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
+
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .result-page h1 {
+      font-size: 2rem;
+    }
+  
+    .result-page {
+      padding: 20px;
+    }
+  
+    .retry-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
   }
   

@@ -1,5 +1,8 @@
+// 
+
+
 import React from 'react';
-import './Question.css'; 
+import './Question.css';
 
 const Question = ({
   question,
@@ -10,18 +13,19 @@ const Question = ({
   onInputChange,
   userInput,
   onInputSubmit,
-  inputSubmitted
+  inputSubmitted,
+  inputError
 }) => {
   return (
     <div className="question-container">
-      <h2>{question}</h2>
+      <h2 className="question-text">{question}</h2>
       {type === 'input' ? (
         <div className="input-container">
           <input
             type={inputType}
             value={userInput}
             onChange={onInputChange}
-            className="question-input"
+            className={`question-input ${inputError ? 'error' : ''}`}
             placeholder="Enter your answer"
           />
           <button
@@ -31,17 +35,20 @@ const Question = ({
           >
             Submit
           </button>
+          {inputError && <p className="error-message">{inputError}</p>}
         </div>
       ) : (
-        options.map((option, index) => (
-          <button
-            key={index}
-            className="question-button"
-            onClick={() => onAnswer(option)}
-          >
-            {option}
-          </button>
-        ))
+        <div className="options-container">
+          {options.map((option, index) => (
+            <button
+              key={index}
+              className="option-button"
+              onClick={() => onAnswer(option)}
+            >
+              {option}
+            </button>
+          ))}
+        </div>
       )}
     </div>
   );

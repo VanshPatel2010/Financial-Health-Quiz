@@ -1,4 +1,4 @@
-.question-container {
+/* .question-container {
     text-align: center;
   }
   
@@ -11,5 +11,127 @@
   .question-input {
     width: 100%;
     max-width: 300px;
+  }
+   */
+
+
+
+
+
+   .question-container {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    max-width: 600px;
+  }
+  
+  .question-text {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .question-input {
+    padding: 10px;
+    border: 1px solid #61dafb;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    background: #fff;
+    color: #000;
+    transition: border-color 0.3s ease;
+  }
+  
+  .question-input.error {
+    border-color: #ff3860;
+  }
+  
+  .submit-button {
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: #21a1f1;
+    transform: translateY(-2px);
+  }
+  
+  .submit-button:focus {
+    outline: none;
+  }
+  
+  .submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: #ff3860;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .option-button {
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .option-button:hover {
+    background-color: #21a1f1;
+    transform: translateY(-2px);
+  }
+  
+  .option-button:focus {
+    outline: none;
+  }
+  
+  .option-button:active {
+    transform: translateY(1px);
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @media (max-width: 768px) {
+    .question-input {
+      width: 90%;
+    }
+  
+    .option-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
   }
   

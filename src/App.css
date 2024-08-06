@@ -1,15 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url('https://media.istockphoto.com/id/1292605965/vector/financial-chart-with-moving-up-stock-market-graph-in-neon-light-colour-background.jpg?s=612x612&w=0&k=20&c=wx81s9Fua7AYbJCKNFrvZawnkILj_YILtDaILsi0afc=') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
-  height: 100vh;
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(0,105,130);
-  background: radial-gradient(circle, rgba(0,105,130,1) 0%, rgba(0,0,0,1) 64%);
+  padding: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+  background: rgba(0, 0, 0, 0.7); /* Translucent dark overlay */
+  border-radius: 15px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.95);
+  
 }
 
-.start-button, .submit-button {
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #61dafb; /* Accent color for the title */
+}
+
+.start-container, .result-container {
+  padding: 40px;
+  border: 2px solid #61dafb;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6); /* Translucent dark background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease-in-out;
+  max-width: 600px; /* Restricts the width for better layout on large screens */
+  height: 14em;
+
+  width: 100%;
+  border: 1px solid skyblue;
+
+box-shadow: 2px 2px 20px skyblue;}
+
+.start-container h1 {
+  color: white;
+  font-size: 3em;
+}
+
+.start-container button {
+  border-radius: .25rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  height: 50px;
+  font-size: 0.7rem;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  transition: .2s .1s;
+  background-image: linear-gradient(90deg,#1c1c1c,#6220fb);
+  box-shadow: 1px 1px 500px #6220fb;
+  border: 0 solid;
+  overflow: hidden;
+  
+  margin-top: 20px;
+}
+/* .start-container button p{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+} */
+
+.start-container button:hover {
+  cursor: pointer;
+  transition: all .3s ease-in;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.submit-button, .retry-button {
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
@@ -17,13 +99,58 @@
   background-color: #61dafb;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.start-button:hover, .submit-button:hover {
+.submit-button i, .retry-button i {
+  margin-right: 10px;
+}
+
+.submit-button:hover, .retry-button:hover {
   background-color: #21a1f1;
+  transform: translateY(-2px);
 }
 
-.start-button:focus, .submit-button:focus {
+.submit-button:focus, .retry-button:focus {
   outline: none;
 }
+
+.submit-button:active, .retry-button:active {
+  transform: translateY(1px);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .start-container, .result-container {
+    padding: 20px;
+  }
+
+  .start-button, .submit-button, .retry-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
